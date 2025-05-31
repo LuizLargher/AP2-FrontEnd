@@ -1,10 +1,105 @@
 @media (max-width: 576px) {
+    body {
+        & main {
+            h1 {
+                font-size: 26px;
+            }
+
+            & .car-ousel {
+                & p {
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 10px;
+                    text-align: center;
+                    opacity: 50%;
+                }
+            }
+
+            & .story {
+                & img {
+                    width: 100%;
+                    float: left;
+                    margin: 10px 0px 10px 0px;
+                }
+
+                & p {
+                    font-family: 'Titillium Web', Times, serif;
+                    font-size: 16px;
+                    text-align: justify;
+                    text-indent: 10px;
+                }
+            }
+
+            & .equipes {
+                & .times {
+                    & h3 {
+                        font-size: 18px;
+
+                        & img {
+                            width: 32px;
+                        }
+                    }
+
+                    & .car {
+                        & img {
+                            width: 100%;
+
+                        }
+                    }
+
+                    & .car {
+                        display: flex;
+                        justify-content: center;
+
+                        & img {
+                            width: 100%;
+                            border-radius: 24px 0px 0px 24px;
+                            border-top: 2px solid black;
+                            border-bottom: 2px solid black;
+                            border-left: 2px solid black;
+
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        footer {
+            padding: 10px;
+            gap: 30px;
+
+            & div {
+                & span {
+                    font-size: 12px;
+                }
+
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
+
 @media (max-width: 768px) {
-    body{
-        & header{
-            & nav{
-                & .extra{}
+    body {
+        & main {
+            h1 {
+                font-size: 26px;
+            }
+
+        }
+
+        footer {
+            padding: 30px;
+            gap: 30px;
+
+            & div {
+                & span {
+                    font-size: 12px;
+                }
+
             }
         }
     }

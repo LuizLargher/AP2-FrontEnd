@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/icon-f1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>
+        F1 - The Official Home of Formula 1&reg; Racing
+    </title>
+</head>
+
+<body>
+    <header>
+        <!--Navegação Secundária-->
+        <nav class="nav1 navbar navbar-expand-sm navbar-dark bg-w">
+            <!--Modalidades-->
+            <div class="camps container col-lg-3 col-md-6 col-sm-12 d-none d-md-flex">
+                <a class="fia-icon ps-5 navbar-brand" href="https://www.formula1.com/" target="_blank">
+                    <img class="fia" src="img/fia_logo.png" alt="Fia logo">
+                </a>
+                <div class="line"></div>
+                <a class="nav-link" href="https://www.formula1.com/" target="_blank" rel="noopener noreferrer">
+                    F1&reg;
+                </a>
+                <a class="nav-link" href="https://www.fiaformula2.com/" target="_blank" rel="noopener noreferrer">
+                    F2&trade;
+                </a>
+                <a class="nav-link" href="https://www.fiaformula3.com/" target="_blank" rel="noopener noreferrer">
+                    F3&trade;
+                </a>
+                <a class="nav-link" href="https://www.f1academy.com/" target="_blank" rel="noopener noreferrer">
+                    F1&reg;Academy
+                </a>
+            </div>
+            <!--Botões-->
+            <div class="buttons container col-lg-3 col-md-6 col-sm-4">
+                <div class="line d-none d-md-flex"></div>
+                <a href="https://f1tv.formula1.com/" target="_blank">
+                    <img src="img/f1-tv-logo.png" alt="">
+                </a>
+                <div class="line d-none d-md-flex"></div>
+                <div class="d-flex gap-3">
+                    <a href="/AP2-FrontEnd/form.html" target="_blank" class="sign">
+                        <i class="fa-regular fa-user"></i>
+                        ENTRAR
+                    </a>
+                    <a class="sub" href="https://www.formula1.com/pt-br/subscribe-to-f1-tv" target="_blank">
+                        INSCREVA-SE
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!--Navegação Principal-->
+        <nav class="nav2 navbar navbar-expand-sm bg-red navbar-dark py-3 text-center">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/AP2-FrontEnd/home.html" target="_blank">
+                    <img class="w-75" src="img/F1_75_Logo.png" alt="F1 75">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <!--Lista de Modalidades (visíveis apenas em mobile)-->
+                    <ul class="navbar-nav d-sm-block d-md-none gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.formula1.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                F1&reg;
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.fiaformula2.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                F2&trade;
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.fiaformula3.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                F3&trade;
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            </a>
+                            <a class="nav-link" href="https://www.f1academy.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                F1&reg;Academy
+                            </a>
+                        </li>
+                    </ul>
+                    <!--Lista de Links Principais-->
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AP2-FrontEnd/drivers.html">
+                                Drivers
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AP2-FrontEnd/teams.html">
+                                Teams
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AP2-FrontEnd/races.html">
+                                Schedules
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Results
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AP2-FrontEnd/games.html">
+                                Games
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="container equipes py-4">
+            <h2>
+                EQUIPES
+            </h2>
+            <div class="times">
+
+                <div class="alpine">
+                    <div class="info">
+                        <h3>
+                            <img src="img/teams/alpine-logo.png" alt="logo alpine">
+                             BWT Alpine Formula One Team
+                        </h3>
+                        <p>
+                            Alpine pode ser um nome relativamente novo na Fórmula 1, mas a famosa divisão de carros
+                            esportivos da Renault tem muita tradição no automobilismo. A reformulação da equipe em 2021
+                            marcou o próximo passo no renascimento da Renault na F1, iniciado em 2016 com a aquisição da
+                            então Lotus. Vencedores de corridas com sua nova identidade, pódios regulares e uma disputa
+                            pelo título devem ser o próximo alvo...
+                        </p>
+                        <h4>
+                            Base
+                        </h4>
+                        <span>
+                            Enstone, Reino Unido
+                        </span>
+                        <h4>
+                            Chefe de Equipe
+                        </h4>
+                        <span>
+                            Flávio Briatore
+                        </span>
+                        <h4>
+                            Carro
+                        </h4>
+                        <span>
+                            A525
+                        </span>
+                        <h4>
+                            Pilotos
+                        </h4>
+                        <span>
+                            Pierre Gasly
+                        </span>
+                        <img class="flag" src="img/flags/France.jpg" alt="bandeira francesa">
+                        <br>
+                        <span>
+                            Franco Colapinto
+                        </span>
+                        <img class="flag" src="img/flags/Argentina.jpg" alt="bandeira argentina">
+                    </div>
+                    <div class="car py-5">
+                        <img src="img/cars-extend/alpine.jpeg" alt="a525">
+                    </div>
+                </div>
+
+                <div class="aston">
+                    <div class="info">
+                        <h3>
+                            <img src="img/teams/aston-martin-logo.png" alt="logo aston martin">
+                             Aston Martin Aramco Formula One Team
+                        </h3>
+                        <p>
+                            A incursão original da Aston Martin na Fórmula 1 – há mais de meio século – durou apenas
+                            cinco corridas. Desta vez, porém, é sério. Esta equipe de F1 não é estranha ao sucesso,
+                            tendo vencido com sua identidade original, a Jordan, e mais recentemente como Racing Point,
+                            em 2020. Reconhecida por sua capacidade de superar as expectativas, e agora com um bicampeão
+                            liderando sua dupla de pilotos – e o designer mais famoso da F1 chegando a bordo em 2025 – a
+                            Aston Martin é uma equipe para ficar de olho…
+                        </p>
+                        <h4>
+                            Base
+                        </h4>
+                        <span>
+                            Silverstone, Reino Unido
+                        </span>
+                        <h4>
+                            Chefe de Equipe
+                        </h4>
+                        <span>
+                            Andy Cowell
+                        </span>
+                        <h4>
+                            Carro
+                        </h4>
+                        <span>
+                            AMR25
+                        </span>
+                        <h4>
+                            Pilotos
+                        </h4>
+                        <span>
+                            Lance Stroll
+                        </span>
+                        <img class="flag" src="img/flags/canada-flag.png" alt="bandeira canadense">
+                        <br>
+                        <span>
+                            Fernando Alonso
+                        </span>
+                        <img class="flag" src="img/flags/spain-flag.png" alt="bandeira espanhola">
+                    </div>
+                    <div class="car py-5">
+                        <img src="img/cars-extend/astonmartin.png" alt="amr25">
+                    </div>
+                </div>
+
+                <div class="ferrari">
+                    <div class="info">
+                        <h3>
+                            <img src="img/teams/ferrari-logo.png" alt="logo ferrari">
+                            Scuderia Ferrari HP
+                        </h3>
+                        <p>
+                            Para muitos, a Ferrari e a Fórmula 1 tornaram-se inseparáveis. Única equipe a competir em
+                            todas as temporadas desde o início do campeonato mundial, a Prancing Horse cresceu do
+                            humilde sonho do fundador Enzo Ferrari para se tornar uma das marcas mais icônicas e
+                            reconhecidas do mundo. O sucesso veio rapidamente com nomes como Alberto Ascari e John
+                            Surtees, e continuou – em tempos difíceis – com Niki Lauda na década de 1970 e Michael
+                            Schumacher na década de 2000, quando a Ferrari conquistou cinco títulos consecutivos, um
+                            feito inédito na época, consolidando seu status como a equipe mais bem-sucedida e
+                            condecorada da história da F1...
+                        </p>
+                        <h4>
+                            Base
+                        </h4>
+                        <span>
+                            Maranello, Itália
+                        </span>
+                        <h4>
+                            Chefe de Equipe
+                        </h4>
+                        <span>
+                            Frédéric Vasseur
+                        </span>
+                        <h4>
+                            Carro
+                        </h4>
+                        <span>
+                            SF-25
+                        </span>
+                        <h4>
+                            Pilotos
+                        </h4>
+                        <span>
+                            Charles Leclerc
+                        </span>
+                        <img class="flag" src="img/flags/monaco-flag.png" alt="bandeira monegasca">
+                        <br>
+                        <span>
+                            Lewis Hamilton
+                        </span>
+                        <img class="flag" src="img/flags/united-kingdom-flag.png" alt="bandeira britanica">
+                    </div>
+                    <div class="car py-5">
+                        <img src="img/cars-extend/ferrari.jpeg" alt="sf25">
+                    </div>
+                </div>
+
+                <div class="haas">
+                    <div class="info">
+                        <h3 >
+                            <img src="img/teams/haas-logo.png" alt="logo haas">
+                             MoneyGram Haas F1 Team
+                        </h3>
+                        <p>
+                            A equipe mais jovem do grid, a Haas, estreou de forma impressionante em 2016 e, no processo,
+                            tornou-se a primeira equipe de F1 liderada exclusivamente por americanos em três décadas.
+                            Fundada pelo industrialista Gene Haas, a equipe está sediada nos Estados Unidos, nas mesmas
+                            instalações de Kannapolis, Carolina do Norte, onde sua equipe campeã da NASCAR Sprint Cup
+                            Series, a Stewart-Haas Racing, também está sediada. A equipe com motores Ferrari também
+                            possui uma fábrica no Reino Unido, em Banbury…
+                        </p>
+                        <h4>
+                            Base
+                        </h4>
+                        <span>
+                            Kannapolis, Estados Unidos
+                        </span>
+                        <h4>
+                            Chefe de Equipe
+                        </h4>
+                        <span>
+                            Ayao Komatsu
+                        </span>
+                        <h4>
+                            Carro
+                        </h4>
+                        <span>
+                            VF-25
+                        </span>
+                        <h4>
+                            Pilotos
+                        </h4>
+                        <span>
+                            Esteban Ocon
+                        </span>
+                        <img class="flag" src="img/flags/France.jpg" alt="bandeira francesa">
+                        <br>
+                        <span>
+                            Oliver Bearman
+                        </span>
+                        <img class="flag" src="img/flags/united-kingdom-flag.png" alt="bandeira britanica">
+                    </div>
+                    <div class="car py-5">
+                        <img src="img/cars-extend/haas-japan.jpeg" alt="vf25">
+                    </div>
+                </div>
+
+                <div class="sauber">
+                    <div class="info">
+                        <h3 >
+                            <img src="img/teams/kick-sauber-logo.png" alt="logo sauber">
+                             Stake F1 Team Kick Sauber
+                        </h3>
+                        <p>
+                            Após ter obtido sucesso considerável no automobilismo mundial, onde ajudou a desenvolver os
+                            talentos emergentes das futuras estrelas da F1 Michael Schumacher e Heinz-Harald Frentzen,
+                            Peter Sauber guiou sua equipe homônima para a F1 em 1993.
+
+                            Desde então, a equipe se estabeleceu como um pilar do grid, tornando-se vencedora de
+                            corridas sob a breve propriedade da BMW e desenvolvendo uma merecida reputação não apenas
+                            por produzir carros competitivos, mas também por desenvolver jovens pilotos.
+
+                            Nas últimas temporadas, eles correram sob o nome Alfa Romeo - e em 2026 se tornarão a equipe
+                            de fábrica da Audi - mas desde 2024 um novo patrocinador principal trouxe uma nova
+                            identidade para a famosa equipe suíça.
+                        </p>
+                        <h4>
+                            Base
+                        </h4>
+                        <span>
+                            Hinwil, Suíça
+                        </span>
+                        <h4>
+                            Chefe de Equipe
+                        </h4>
+                        <span>
+                            Jonathan Wheatley
+                        </span>
+                        <h4>
+                            Carro
+                        </h4>
+                        <span>
+                            C45
+                        </span>
+                        <h4>
+                            Pilotos
+                        </h4>
+                        <span>
+                            Nico Hulkenberg
+                        </span>
+                        <img class="flag" src="img/flags/Germany.jpg" alt="bandeira alemã">
+                        <br>
+                        <span>
+                            Gabriel Bortoleto
+                        </span>
+                        <img class="flag" src="img/flags/brazil-flag.png" alt="bandeira brasileira">
+                    </div>
+                    <div class="car py-5">
+                        <img src="img/cars-extend/sauber.jpeg" alt="c45">
+                    </div>
+                </div>
+
+                <div class="mclaren">
+                    <div class="info">
+                        <h3 >
+                            <img src="img/teams/mclaren-logo.png" alt="logo mclaren">
+                             Mclaren Formula 1 Team
+                        </h3>
+                        <p>
+                            Desde que entrou no esporte em 1966, sob a orientação e o esforço incansável do fundador
+                            homônimo Bruce, o sucesso da McLaren tem sido nada menos que de tirar o fôlego. Cinco
+                            décadas brilhantes renderam inúmeras vitórias, pole positions e pódios, sem mencionar nove
+                            campeonatos de construtores. Além disso, alguns dos maiores pilotos do esporte fizeram seus
+                            nomes com a equipe, incluindo Emerson Fittipaldi, Ayrton Senna, Mika Hakkinen e Lewis
+                            Hamilton...
+                        </p>
+                        <h4>
+                            Base
+                        </h4>
+                        <span>
+                            Woking, Reino Unido
+                        </span>
+                        <h4>
+                            Chefe de Equipe
+                        </h4>
+                        <span>
+                            Andréa Stella
+                        </span>
+                        <h4>
+                            Carro
+                        </h4>
+                        <span>
+                            MCL39
+                        </span>
+                        <h4>
+                            Pilotos
+                        </h4>
+                        <span>
+                            Lando Norris
+                        </span>
+                        <img class="flag" src="img/flags/united-kingdom-flag.png" alt="bandeira britanica">
+                        <br>
+                        <span>
+                            Oscar Piastri
+                        </span>
+                        <img class="flag" src="img/flags/australia-flag.png" alt="bandeira australiana">
+                    </div>
+                    <div class="car py-5">
+                        <img src="img/cars-extend/mclaren.jpeg" alt="mcl39">
+                    </div>
+                </div>
+
+                <div class="mercedes">
+                    <div class="info">
+                        <h3>
+                            <img src="img/teams/mercedes-logo.png" alt="logo mercedes">
+                             Mercedes-AMG PETRONAS Formula One Team
+                        </h3>
+                        <p>
+                            O renascimento da Mercedes na F1 moderna começou com a criação de uma equipe de fábrica em
+                            2010 – a plataforma para uma ascensão meteórica na classificação dos Grandes Prêmios. A
+                            equipe gerou enorme entusiasmo desde o início com o retorno sensacional de Michael
+                            Schumacher, mas logo as manchetes na pista: três pódios em sua temporada de estreia, todos
+                            com Nico Rosberg – que então conquistou uma dupla pole/vitória na China em 2012. Na
+                            temporada seguinte, ele foi companheiro de equipe de Lewis Hamilton, e a dupla protagonizou
+                            algumas batalhas épicas pelo título, enquanto as Flechas de Prata varriam tudo à sua frente
+                            para se tornarem uma das forças mais dominantes da era moderna da F1 – até a Red Bull chegar
+                            e roubar a coroa. No entanto, com o consagrado vencedor George Russell agora em parceria com
+                            a estrela em ascensão Kimi Antonelli, a Mercedes continua sendo uma das equipes a serem
+                            batidas…
+                        </p>
+                        <h4>
+                            Base
+                        </h4>
+                        <span>
+                            Brackley, Reino Unido
+                        </span>
+                        <h4>
+                            Chefe de Equipe
+                        </h4>
+                        <span>
+                            Toto Wolff
+                        </span>
+                        <h4>
+                            Carro
+                        </h4>
+                        <span>
+                            W16
+                        </span>
+                        <h4>
+                            Pilotos
+                        </h4>
+                        <span>
+                            George Russell
+                        </span>
+                        <img class="flag" src="img/flags/united-kingdom-flag.png" alt="bandeira britanica">
+                        <br>
+                        <span>
+                            Kimi Antonelli
+                        </span>
+                        <img class="flag" src="img/flags/italy-flag.png" alt="bandeira italiana">
+                    </div>
+                    <div class="car py-5">
+                        <img src="img/cars-extend/mercedes.jpeg" alt="w16">
+                    </div>
+                </div>
+
+                <div class="vcarb">
+                    <div class="info">
+                        <h3>
+                            <img src="img/teams/racing-bulls-logo.png" alt="logo racingbulls">
+                            | Visa Cash App Racing Bulls Formula One Team
+                        </h3>
+                        <p>
+                            Criada em 2006 como uma equipe na qual jovens pilotos do prodigioso grupo de talentos da Red
+                            Bull podiam dar os primeiros passos na F1, a Racing Bulls – originalmente chamada Toro
+                            Rosso, depois AlphaTauri e, por fim, RB – foi formada a partir das cinzas da corajosa equipe
+                            Minardi. Sebastian Vettel validou a abordagem quase imediatamente, conquistando uma vitória
+                            de conto de fadas em 2008, antes de conquistar o título mundial com a equipe-mãe, a Red Bull
+                            Racing. Hoje, o espírito de cultivar talentos ainda se mantém, embora a equipe italiana não
+                            seja mais apenas uma "equipe B", mas uma construtora por direito próprio...
+                        </p>
+                        <h4>
+                            Base
+                        </h4>
+                        <span>
+                            Faenza, Itália
+                        </span>
+                        <h4>
+                            Chefe de Equipe
+                        </h4>
+                        <span>
+                            Laurent Mekies
+                        </span>
+                        <h4>
+                            Carro
+                        </h4>
+                        <span>
+                            VCARB02
+                        </span>
+                        <h4>
+                            Pilotos
+                        </h4>
+                        <span>
+                            Liam Lawson
+                        </span>
+                        <img class="flag" src="img/flags/australia-flag.png" alt="bandeira australiana">
+                        <br>
+                        <span>
+                            Isack Hadjar
+                        </span>
+                        <img class="flag" src="img/flags/France.jpg" alt="bandeira francesa">
+                    </div>
+                    <div class="car py-5">
+                        <img src="img/cars-extend/racingbulls.jpeg" alt="vcarb02">
+                    </div>
+                </div>
+
+                <div class="redbull">
+                    <div class="info">
+                        <h3>
+                            <img src="img/teams/red-bull-racing-logo.png" alt="logo redbull">
+                            | Oracle Red Bull Racing
+                        </h3>
+                        <p>
+                            A Red Bull já conhecia a F1 – como patrocinadora – antes de entrar formalmente como equipe de fábrica em 2004. Mesmo assim, a escala de seu sucesso na década seguinte foi impressionante. Após um primeiro pódio em 2006, a equipe atingiu seu auge em 2009, conquistando seis vitórias e o segundo lugar no campeonato de construtores. Nas quatro temporadas seguintes, a equipe foi um verdadeiro tour de force, conquistando títulos duplos consecutivos entre 2010 e 2013, com Sebastian Vettel emergindo como o mais jovem tetracampeão da categoria. Agora, eles estão recapturando essa glória com um talento igualmente empolgante – um chamado Max Verstappen…
+                        </p>
+                        <h4>
+                            Base
+                        </h4>
+                        <span>
+                            Milton Keynes, Reino Unido
+                        </span>
+                        <h4>
+                            Chefe de Equipe
+                        </h4>
+                        <span>
+                            Christian Horner
+                        </span>
+                        <h4>
+                            Carro
+                        </h4>
+                        <span>
+                            RB21
+                        </span>
+                        <h4>
+                            Pilotos
+                        </h4>
+                        <span>
+                            Max Verstappen
+                        </span>
+                        <img class="flag" src="img/flags/netherlands-flag.png" alt="bandeira holandesa">
+                        <br>
+                        <span>
+                            Yuki Tsunoda
+                        </span>
+                        <img class="flag" src="img/flags/japan-flag.png" alt="bandeira japonesa">
+                    </div>
+                    <div class="car py-5">
+                        <img src="img/cars-extend/redbull.jpeg" alt="rb21">
+                    </div>
+                </div>
+
+                <div class="williams">
+                    <div class="info">
+                        <h3>
+                            <img src="img/teams/williams-logo.png" alt="logo williams">
+                            | Atlassian Williams Racing
+                        </h3>
+                        <p>
+                            Impulsionada pelo brilhantismo e pela paixão do falecido Sir Frank Williams, a Williams cresceu de origens humildes para se tornar um gigante da Fórmula 1, inigualável por todos, exceto Ferrari e McLaren, em termos de sucesso duradouro. Nas últimas quatro décadas, a equipe acumulou vitórias em Grandes Prêmios e glórias em campeonatos, e, no processo, nutriu alguns dos maiores talentos do esporte, tanto dentro quanto fora do cockpit. E, após a decisão da família Williams de se afastar após a venda da equipe para a Dorilton Capital em 2020, uma nova era começou...
+                        </p>
+                        <h4>
+                            Base
+                        </h4>
+                        <span>
+                            Grove, Reino Unido
+                        </span>
+                        <h4>
+                            Chefe de Equipe
+                        </h4>
+                        <span>
+                            James Vowles
+                        </span>
+                        <h4>
+                            Carro
+                        </h4>
+                        <span>
+                            FW47
+                        </span>
+                        <h4>
+                            Pilotos
+                        </h4>
+                        <span>
+                            Alex Albon
+                        </span>
+                        <img class="flag" src="img/flags/Thailand.jpg" alt="bandeira tailandesa">
+                        <br>
+                        <span>
+                            Carlos Sainz
+                        </span>
+                        <img class="flag" src="img/flags/spain-flag.png" alt="bandeira espanhola">
+                    </div>
+                    <div class="car py-5">
+                        <img src="img/cars-extend/williams.jpeg" alt="fw47">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.formula1.com/" target="_blank">
+                <img src="img/F1_75_Logo.png" alt="f1 2025 logo">
+            </a>
+        </div>
+        <div>
+            <span>
+                &copy;2025 Luiz Guilherme Largher Gomes Development
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>

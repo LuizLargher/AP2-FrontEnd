@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +16,10 @@
 
 <body>
     <header>
+
         <!--Navegação Secundária-->
         <nav class="nav1 navbar navbar-expand-sm navbar-dark bg-w">
+
             <!--Modalidades-->
             <div class="camps container col-lg-3 col-md-6 col-sm-12 d-none d-md-flex">
                 <a class="fia-icon ps-5 navbar-brand" href="https://www.formula1.com/" target="_blank">
@@ -38,6 +39,7 @@
                     F1&reg;Academy
                 </a>
             </div>
+
             <!--Botões-->
             <div class="buttons container col-lg-3 col-md-6 col-sm-4">
                 <div class="line d-none d-md-flex"></div>
@@ -56,10 +58,11 @@
                 </div>
             </div>
         </nav>
+
         <!--Navegação Principal-->
         <nav class="nav2 navbar navbar-expand-sm bg-red navbar-dark py-3 text-center">
             <div class="container-fluid">
-                <a class="navbar-brand" href="https://www.formula1.com/" target="_blank">
+                <a class="navbar-brand" href="#story" target="_blank">
                     <img class="w-75" src="img/F1_75_Logo.png" alt="F1 75">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -67,6 +70,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
                     <!--Lista de Modalidades (visíveis apenas em mobile)-->
                     <ul class="navbar-nav d-sm-block d-md-none gap-3">
                         <li class="nav-item">
@@ -95,20 +99,21 @@
                             </a>
                         </li>
                     </ul>
+
                     <!--Lista de Links Principais-->
                     <ul class="navbar-nav gap-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/AP2-FrontEnd/drivers.html">
                                 Drivers
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/AP2-FrontEnd/teams.html">
                                 Teams
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/AP2-FrontEnd/races.html">
                                 Schedules
                             </a>
                         </li>
@@ -117,20 +122,127 @@
                                 Results
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Games
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    
+
     <main class="container">
+        <section class="container">
+            <h1 class="my-3 d-flex justify-content-center align-itens-center">
+                FORMULA 1&reg; 2025
+            </h1>
+        </section>
 
+        <section class="container">
+
+            <!--HISTÓRIA-->
+            <div class="story my-5">
+                <h2>
+                    HISTÓRIA
+                </h2>
+                <p>
+                    Oficialmente, a Fórmula 1 foi criada em 1950 pela Federação Internacional de Automobilismo (FIA).
+                    No entanto, a história da categoria remonta ao final do século XIX, quando as primeiras corridas de
+                    carros foram disputadas na Europa. Como na época não existiam circuitos, as corridas aconteciam em
+                    estradas. Alguns historiadores apontam que uma corrida entre Paris e Bordeaux, na França, em 1895,
+                    tenha sido o marco inicial da F1. Essa corrida durou 48 horas e teve um percurso de 1200
+                    quilômetros.
+                </p>
+                <img src="img/1950.png" alt="Formula 1 1950">
+                <p>
+                    Há quem considere o ano de 1901 como o início da Fórmula 1, pois nesse ano foi disputada a primeira
+                    corrida com o nome de Grande Prêmio (GP). Na ocasião, a cidade de Le Mans sediou o Grande Prêmio da
+                    França. Atualmente, Le Mans não recebe a Fórmula 1, mas é considerada um dos mais importantes
+                    circuitos do mundo.
+                </p>
+                <p>
+                    Entre 1901 e 1949, vários GPs foram disputados ao redor da Europa, em países como França, Itália,
+                    Bélgica, Inglaterra, Alemanha, Mônaco e Espanha. Os GPs só não aconteceram durante a Primeira Guerra
+                    Mundial e a Segunda. No decorrer das guerras, os pilotos participaram de corridas nos Estados
+                    Unidos, como em Indianápolis, outro grande circuito do automobilismo.
+                </p>
+                <p>
+                    Depois da Segunda Guerra Mundial, a FIA decidiu elaborar um campeonato reunindo os principais
+                    Grandes Prêmios da Europa e deu a ele o nome de Fórmula 1. A nova competição reuniria as maiores
+                    fabricantes de carros do continente, como Alfa Romeo, Ferrari, Maserati e Mercedes.
+                </p>
+            </div>
+        </section>
+
+        <section class="container car-ousel my-5">
+
+            <!--CAROUSEL-->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/cars-presentation/alpine.png" alt="A525 Alpine" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cars-presentation/astonmartin.png" alt="AMR25 Aston Martin" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cars-presentation/ferrari.jpeg" alt="SF25 Ferrari" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cars-presentation/haas.jpeg" alt="VF25 Haas" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cars-presentation/mclaren.jpg" alt="MCL39 Mclaren" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cars-presentation/mercedes.jpeg" alt="W16 Mercedes" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cars-presentation/racingbulls.jpeg" alt="VCARB02 Racing Bulls"
+                            class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cars-presentation/redbull.png" alt="RB21 Red Bull Racing" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cars-presentation/sauber.jpeg" alt="C45 Sauber" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cars-presentation/williams.jpeg" alt="FW47 Williams" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <p>
+                Imagens dos carros da temporada 2025 da F1&reg;
+            </p>
+        </section>
     </main>
+    <footer>
+        <div>
+            <a href="https://www.formula1.com/" target="_blank">
+                <img src="img/F1_75_Logo.png" alt="f1 2025 logo">
+            </a>
+        </div>
+        <div>
+            <span>
+                &copy;2025 Luiz Guilherme Largher Gomes Development
+            </span>
+        </div>
+    </footer>
 </body>
-
 </html>

@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/icon-f1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>
+        F1 - The Official Home of Formula 1&reg; Racing
+    </title>
+</head>
+
+<body>
+    <header>
+        <!--Navegação Secundária-->
+        <nav class="nav1 navbar navbar-expand-sm navbar-dark bg-w">
+            <!--Modalidades-->
+            <div class="camps container col-lg-3 col-md-6 col-sm-12 d-none d-md-flex">
+                <a class="fia-icon ps-5 navbar-brand" href="https://www.formula1.com/" target="_blank">
+                    <img class="fia" src="img/fia_logo.png" alt="Fia logo">
+                </a>
+                <div class="line"></div>
+                <a class="nav-link" href="https://www.formula1.com/" target="_blank" rel="noopener noreferrer">
+                    F1&reg;
+                </a>
+                <a class="nav-link" href="https://www.fiaformula2.com/" target="_blank" rel="noopener noreferrer">
+                    F2&trade;
+                </a>
+                <a class="nav-link" href="https://www.fiaformula3.com/" target="_blank" rel="noopener noreferrer">
+                    F3&trade;
+                </a>
+                <a class="nav-link" href="https://www.f1academy.com/" target="_blank" rel="noopener noreferrer">
+                    F1&reg;Academy
+                </a>
+            </div>
+            <!--Botões-->
+            <div class="buttons container col-lg-3 col-md-6 col-sm-4">
+                <div class="line d-none d-md-flex"></div>
+                <a href="https://f1tv.formula1.com/" target="_blank">
+                    <img src="img/f1-tv-logo.png" alt="">
+                </a>
+                <div class="line d-none d-md-flex"></div>
+                <div class="d-flex gap-3">
+                    <a href="/AP2-FrontEnd/form.html" target="_blank" class="sign">
+                        <i class="fa-regular fa-user"></i>
+                        ENTRAR
+                    </a>
+                    <a class="sub" href="https://www.formula1.com/pt-br/subscribe-to-f1-tv" target="_blank">
+                        INSCREVA-SE
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!--Navegação Principal-->
+        <nav class="nav2 navbar navbar-expand-sm bg-red navbar-dark py-3 text-center">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/AP2-FrontEnd/home.html" target="_blank">
+                    <img class="w-75" src="img/F1_75_Logo.png" alt="F1 75">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <!--Lista de Modalidades (visíveis apenas em mobile)-->
+                    <ul class="navbar-nav d-sm-block d-md-none gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.formula1.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                F1&reg;
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.fiaformula2.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                F2&trade;
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.fiaformula3.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                F3&trade;
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            </a>
+                            <a class="nav-link" href="https://www.f1academy.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                F1&reg;Academy
+                            </a>
+                        </li>
+                    </ul>
+                    <!--Lista de Links Principais-->
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AP2-FrontEnd/drivers.html">
+                                Drivers
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AP2-FrontEnd/teams.html">
+                                Teams
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AP2-FrontEnd/races.html">
+                                Schedules
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Results
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="py-3">
+            PILOTOS
+        </h2>
+        <div class="drivers d-flex flex-wrap">
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            1
+                        </h3>
+                        <p>
+                            161
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/piastri.png" class="card-img-top" alt="oscar piastri">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid orange;" class="card-title">
+                            Oscar
+                            <br>
+                            <b>
+                                PIASTRI
+                            </b>
+                            <img class="flag" src="img/flags/australia-flag.png" alt="australia">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/oscar-81.png" alt="81">
+
+                        <p class="card-text">
+                            Mclaren
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            2
+                        </h3>
+                        <p>
+                            158
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/norris.png" class="card-img-top" alt="lando norris">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid orange;"class="card-title">
+                            Lando
+                            <br>
+                            <b>
+                                NORRIS
+                            </b>
+                            <img class="flag" src="img/flags/united-kingdom-flag.png" alt="reino unido">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/lando-4.png" alt="4">
+
+                        <p class="card-text">
+                            Mclaren
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            3
+                        </h3>
+                        <p>
+                            136
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/verstappen.png" class="card-img-top" alt="max verstappen">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(7, 1, 128);"class="card-title">
+                            Max
+                            <br>
+                            <b style="font-size: 15px;">
+                                VERSTAPPEN
+                            </b>
+                            <img class="flag" src="img/flags/netherlands-flag.png" alt="holanda">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/max-1.png" alt="1">
+
+                        <p class="card-text">
+                            Red Bull Racing
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            4
+                        </h3>
+                        <p>
+                            099
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/russell.png" class="card-img-top" alt="george russell">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 222, 200);"class="card-title">
+                            George
+                            <br>
+                            <b>
+                                RUSSELL
+                            </b>
+                            <img class="flag" src="img/flags/united-kingdom-flag.png" alt="Reino unido">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/george-63.png" alt="63">
+
+                        <p class="card-text">
+                            Mercedes
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            5
+                        </h3>
+                        <p>
+                            079
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/leclerc.png" class="card-img-top" alt="charles leclerc">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(255, 0, 0);"class="card-title">
+                            Charles
+                            <br>
+                            <b>
+                                LECLERC
+                            </b>
+                            <img class="flag" src="img/flags/monaco-flag.png" alt="monaco">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/charles-16.png" alt="16">
+
+                        <p class="card-text">
+                            Ferrari
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            6
+                        </h3>
+                        <p>
+                            063
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/hamilton.png" class="card-img-top" alt="lewis hamilton">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(255, 0, 0);"  class="card-title">
+                            Lewis
+                            <br>
+                            <b>
+                                HAMILTON
+                            </b>
+                            <img class="flag" src="img/flags/united-kingdom-flag.png" alt="Reino unido">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/lewis-44.png" alt="44">
+
+                        <p class="card-text">
+                            Ferrari
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            7
+                        </h3>
+                        <p>
+                            048
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/antonelli.png" class="card-img-top" alt="kimi antonelli">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 222, 200);"class="card-title">
+                            Kimi
+                            <br>
+                            <b style="font-size: 15px;">
+                                ANTONELLI
+                            </b>
+                            <img class="flag" src="img/flags/italy-flag.png" alt="italia">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/kimi-12.png" alt="12">
+
+                        <p class="card-text">
+                            Mercedes
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            8
+                        </h3>
+                        <p>
+                            042
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/albon.png" class="card-img-top" alt="alex albon">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 94, 235);"class="card-title">
+                            Alex
+                            <br>
+                            <b>
+                                ALBON
+                            </b>
+                            <img class="flag" src="img/flags/Thailand.jpg" alt="tailandia">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/alex-23.png" alt="23">
+
+                        <p class="card-text">
+                            Williams
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            9
+                        </h3>
+                        <p>
+                            020
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/ocon.png" class="card-img-top" alt="esteban ocon">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(180, 180, 180);"class="card-title">
+                            Esteban
+                            <br>
+                            <b>
+                                OCON
+                            </b>
+                            <img class="flag" src="img/flags/France.jpg" alt="frança">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/esteban-31.png" alt="31">
+
+                        <p class="card-text">
+                            Haas
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            10
+                        </h3>
+                        <p>
+                            015
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/hadjar.png" class="card-img-top" alt="isack hadjar">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 176, 246);"class="card-title">
+                            Isack
+                            <br>
+                            <b>
+                                HADJAR
+                            </b>
+                            <img class="flag" src="img/flags/France.jpg" alt="frança">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/isack-6.png" alt="6">
+
+                        <p class="card-text">
+                            Racing Bulls
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            11
+                        </h3>
+                        <p>
+                            014
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/stroll.png" class="card-img-top" alt="lance stroll">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 135, 92);"class="card-title">
+                            Lance
+                            <br>
+                            <b>
+                                STROLL
+                            </b>
+                            <img class="flag" src="img/flags/canada-flag.png" alt="canada">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/lance-18.png" alt="18">
+
+                        <p class="card-text">
+                            Aston Martin
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            12
+                        </h3>
+                        <p>
+                            012
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/sainz.png" class="card-img-top" alt="carlos saiz">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 94, 235);"class="card-title">
+                            Carlos
+                            <br>
+                            <b>
+                                SAINZ
+                            </b>
+                            <img class="flag" src="img/flags/spain-flag.png" alt="espanha">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/carlos-55.png" alt="55">
+
+                        <p class="card-text">
+                            Williams
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            13
+                        </h3>
+                        <p>
+                            010
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/tsunoda.png" class="card-img-top" alt="yuki tsunoda">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 46, 116);" class="card-title">
+                            Yuki
+                            <br>
+                            <b>
+                                TSUNODA
+                            </b>
+                            <img class="flag" src="img/flags/japan-flag.png" alt="japao">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/yuki-22.png" alt="22">
+
+                        <p class="card-text">
+                            Red Bull Racing
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            14
+                        </h3>
+                        <p>
+                            007
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/gasly.png" class="card-img-top" alt="pierre gasly">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 125, 235);"class="card-title">
+                            Pierre
+                            <br>
+                            <b>
+                                GASLY
+                            </b>
+                            <img class="flag" src="img/flags/France.jpg" alt="frança">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/pierre-10.png" alt="10">
+
+                        <p class="card-text">
+                            Alpine
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            15
+                        </h3>
+                        <p>
+                            006
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/hulkenberg.png" class="card-img-top" alt="nico hulkenberg">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 235, 51);"class="card-title">
+                            Nico
+                            <br>
+                            <b style="font-size: 15px;">
+                                HULKENBERG
+                            </b>
+                            <img class="flag" src="img/flags/Germany.jpg" alt="alemanha">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/nico-27.png" alt="27">
+
+                        <p class="card-text">
+                            Kick Sauber
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            16
+                        </h3>
+                        <p>
+                            006
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/bearman.png" class="card-img-top" alt="oliver bearman">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(180, 180, 180);"class="card-title">
+                            Oliver
+                            <br>
+                            <b>
+                                BEARMAN
+                            </b>
+                            <img class="flag" src="img/flags/united-kingdom-flag.png" alt="Reino unido">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/oliver-87.png" alt="87">
+
+                        <p class="card-text">
+                            Haas
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            17
+                        </h3>
+                        <p>
+                            004
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/lawson.png" class="card-img-top" alt="liam lawson">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 176, 246);"class="card-title">
+                            Liam
+                            <br>
+                            <b>
+                                LAWSON
+                            </b>
+                            <img class="flag" src="img/flags/australia-flag.png" alt="australia">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/lian-30.png" alt="30">
+
+                        <p class="card-text">
+                            Racing Bulls
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            18
+                        </h3>
+                        <p>
+                            000
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/alonso.png" class="card-img-top" alt="fernando alonso">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 135, 92);"class="card-title">
+                            Oscar
+                            <br>
+                            <b>
+                                PIASTRI
+                            </b>
+                            <img class="flag" src="img/flags/spain-flag.png" alt="espanha">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/fernando-14.png" alt="14">
+
+                        <p class="card-text">
+                            Aston Martin
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            19
+                        </h3>
+                        <p>
+                            000
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/doohan.png" class="card-img-top" alt="jack doohan">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 125, 235);"class="card-title">
+                            Jack
+                            <br>
+                            <b>
+                                DOOHAN
+                            </b>
+                            <img class="flag" src="img/flags/australia-flag.png" alt="australia">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/jack-7.png" alt="7">
+
+                        <p class="card-text">
+                            Alpine
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            20
+                        </h3>
+                        <p>
+                            000
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/colapinto.png" class="card-img-top" alt="franco colapinto">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 125, 235);"class="card-title">
+                            Franco
+                            <br>
+                            <b style="font-size: 15px;">
+                                COLAPINTO
+                            </b>
+                            <img class="flag" src="img/flags/Argentina.jpg" alt="argentina">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/franco-43.png" alt="43">
+
+                        <p class="card-text">
+                            Alpine
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="card-body">
+                <div class="card" style="width: 15em; padding: 10px;">
+                    <div class="d-flex">
+                        <h3>
+                            21
+                        </h3>
+                        <p>
+                            000
+                            <span>
+                                PTS
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <img class="driver" src="/AP2-FrontEnd/img/drivers/bortoleto.png" class="card-img-top" alt="gabriel bortoleto">
+
+                    <div class="card-body">
+
+                        <h5 style="border-left: 5px solid rgb(0, 235, 31);"class="card-title">
+                            Gabriel
+                            <br>
+                            <b style="font-size: 15px;">
+                                BORTOLETO
+                            </b>
+                            <img class="flag" src="img/flags/brazil-flag.png" alt="brazil">
+                        </h5>
+
+                        <img class="d-number" src="img/d-numbers/gabriel-5.png" alt="5">
+
+                        <p class="card-text">
+                            Kick Sauber
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://www.formula1.com/" target="_blank">
+                <img src="img/F1_75_Logo.png" alt="f1 2025 logo">
+            </a>
+        </div>
+        <div>
+            <span>
+                &copy;2025 Luiz Guilherme Largher Gomes Development
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
